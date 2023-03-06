@@ -5,6 +5,13 @@ class Node:
 
 
 class Stack:
+    """
+    Linked list implementation.
+    LIFO
+    push from top O(1)
+    pop from top O(1)
+    """
+
     def __init__(self, value) -> None:
         new_node = Node(value)
         self.top = new_node
@@ -35,6 +42,13 @@ class Stack:
 
 
 class Queue:
+    """
+    Linked list implementation.
+    FIFO
+    Enqueue at end O(1)
+    Dequeue at start O(1)
+    """
+
     def __init__(self, value) -> None:
         new_node = Node(value)
         self.first = new_node
