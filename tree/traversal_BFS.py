@@ -67,12 +67,8 @@ my_tree.insert(27)
 my_tree.insert(52)
 my_tree.insert(82)
 
-print(my_tree.BFS())
-
-
-"""
-    EXPECTED OUTPUT:
-    ----------------
-    [47, 21, 76, 18, 27, 52, 82]
-
- """
+print(
+    "BFS Traversal:",
+    my_tree.BFS(),
+    "\nExpected : [47, 21, 76, 18, 27, 52, 82]",
+)

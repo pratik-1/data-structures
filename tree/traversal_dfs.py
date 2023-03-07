@@ -92,19 +92,19 @@ my_tree.insert(52)
 my_tree.insert(82)
 
 print(
-    "Pre-order:",
+    "Pre-order: ",
     my_tree.dfs_preorder(),
     "\nExpected: [47, 21, 18, 27, 76, 52, 82]",
 )
 
 print(
-    "\nPost-order:",
+    "\nPost-order: ",
     my_tree.dfs_postorder(),
     "\nExpected: [18, 27, 21, 52, 82, 76, 47]",
 )
 
 print(
-    "\nIn-order:",
+    "\nIn-order: ",
     my_tree.dfs_inorder(),
     "\nExpected: [18, 21, 27, 47, 52, 76, 82]",
 )
