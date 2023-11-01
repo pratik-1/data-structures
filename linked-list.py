@@ -100,7 +100,7 @@ class LinkedList:
         return True
 
     def remove(self, index):
-        if index < 0 or index > self.length:
+        if index < 0 or index >= self.length:
             return None
         if index == 0:
             return self.pop_first()
@@ -114,9 +114,12 @@ class LinkedList:
         return temp
 
     def reverse(self):
+        # reverse head and tail
         temp = self.head
         self.head = self.tail
         self.tail = temp
+
+        # reverse arrows
         after = temp.next
         before = None
         for _ in range(self.length):
@@ -154,5 +157,5 @@ my_linked_list.print_list()
     3
     2
     1
-    
+
 """
