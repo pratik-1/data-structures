@@ -1,5 +1,6 @@
 """
-Given an integer array nums and an integer k, return the number of non-empty subarrays that have a sum divisible by k.
+Given an integer array nums and an integer k, return the number of non-empty subarrays
+that have a sum divisible by k.
 
 A subarray is a contiguous part of an array.
 Example 1:
@@ -15,7 +16,7 @@ Constraints:
     -104 <= nums[i] <= 104
     2 <= k <= 104
 """
-# TODO: Improve doc. Add tests and better solution.
+
 
 def subarray_count(lst, target):
     rs = 0
@@ -33,7 +34,18 @@ def subarray_count(lst, target):
             d[rem] = 1
     return ans
 
+nums = [4,5,0,-2,-3,1]
+k = 5
+print(subarray_count(nums, k))
 
-print(subarray_count([4,5,0,-2,-3,1], 5))
+nums = [5]
+k = 9
+print(subarray_count(nums, k))
 
-print(subarray_count([5], 9))
+
+"""
+    EXPECTED OUTPUT:
+    ----------------
+    7
+    0
+"""
