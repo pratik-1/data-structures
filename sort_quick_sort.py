@@ -36,6 +36,6 @@ def quick_sort(list):
     return list
 
 
-my_list = [1, 2, 3, 4, 5, 6]
-quick_sort(my_list)
-print(my_list)
+my_list = [6, 5, 2, 4, 1, 3]
+my_sorted_list = quick_sort(my_list)
+print(my_sorted_list)
